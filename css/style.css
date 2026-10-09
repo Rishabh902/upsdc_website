@@ -1067,15 +1067,7 @@ img {
     inset: auto 0 0;
     z-index: 2;
     color: #fff;
-    padding: 28px;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: opacity .6s cubic-bezier(.25, .46, .45, .94) .2s, transform .6s cubic-bezier(.25, .46, .45, .94) .2s
-}
-
-.sewage-card:hover .sewage-content {
-    opacity: 1;
-    transform: translateY(0)
+    padding: 28px
 }
 
 .sewage-content .badge-label {
@@ -1103,7 +1095,9 @@ img {
 .sewage-content .call-to-action {
     background: #f4aa00;
     border-color: #f4aa00;
-    box-shadow: 0 7px 20px rgba(0, 0, 0, .16)
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .16);
+    opacity: 1;
+    transform: none
 }
 
 .sewage-content .call-to-action:hover {
@@ -1226,6 +1220,11 @@ img {
     display: flex;
     gap: 12px;
     flex-wrap: wrap
+}
+
+.activity-buttons .call-to-action {
+    opacity: 1;
+    transform: none
 }
 
 .outline-button--white {
