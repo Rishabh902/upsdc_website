@@ -37,6 +37,23 @@
         color: #f4aa00
     }
 
+    .menu-close {
+        display: none;
+        width: 100%;
+        padding: 13px 14px;
+        border: 0;
+        background: 0 0;
+        color: #fff;
+        text-align: right;
+        font-size: 28px;
+        line-height: 0.8;
+        cursor: pointer
+    }
+
+    .menu.menu--open .menu-close {
+        display: block
+    }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -46,6 +63,10 @@
     .menu.menu--open {
         display: flex;
         animation: slideDown .3s cubic-bezier(.25, .46, .45, .94)
+    }
+
+    .menu.menu--open .menu-item {
+        display: block
     }
 
     @keyframes slideDown {
@@ -246,7 +267,31 @@
 
     .download-card {
         min-height: auto;
-        margin-bottom: 18px
+        margin-bottom: 18px;
+        padding: 14px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px
+    }
+
+    .download-card small {
+        display: none
+    }
+
+    .download-card .svg-icon {
+        margin-right: 8px
+    }
+
+    .download-card strong {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .download-card b {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 0
     }
 
     .news-card {
@@ -291,16 +336,29 @@
         height: 140px
     }
 
-    .footer .text-right {
-        text-align: left
-    }
-
     .footer-bottom {
         padding: 12px 0
     }
 
+    .footer-bottom .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .footer-bottom .col-sm-8,
     .footer-bottom .col-sm-4 {
+        float: none;
+        width: auto;
         margin-top: 5px
+    }
+
+    .footer-bottom .text-right {
+        text-align: right !important
+    }
+
+    .footer-bottom .col-sm-8 {
+        text-align: left
     }
 
     .welcome-wide {

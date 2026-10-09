@@ -293,6 +293,10 @@ img {
     display: none
 }
 
+.menu-close {
+    display: none
+}
+
 .carousel {
     height: 540px;
     position: relative;

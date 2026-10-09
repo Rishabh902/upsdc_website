@@ -12,6 +12,7 @@
 
   var menu = query('#menu');
   var menuButton = query('.menu-toggle');
+  var menuClose = menu ? menu.querySelector('.menu-close') : null;
   if (menu && menuButton) {
     menuButton.addEventListener('click', function () {
       var open = menu.classList.toggle('menu--open');
@@ -23,6 +24,14 @@
         document.body.style.overflow = '';
       }
     });
+    if (menuClose) {
+      menuClose.addEventListener('click', function () {
+        menu.classList.remove('menu--open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        menuButton.focus();
+      });
+    }
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && menu.classList.contains('menu--open')) {
         menu.classList.remove('menu--open');
