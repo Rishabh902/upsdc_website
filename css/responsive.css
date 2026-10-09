@@ -1,0 +1,548 @@
+@media (max-width:1199px) {
+    .menu-item {
+        font-size: 11.5px;
+        padding-left: 7px;
+        padding-right: 7px
+    }
+
+    .carousel-caption h1 {
+        font-size: 40px
+    }
+
+    .logo {
+        width: 520px
+    }
+
+    .emblem img {
+        width: 105px;
+        height: 105px
+    }
+}
+
+@media (max-width:991px) {
+    .menu-toggle {
+        display: block;
+        width: 100%;
+        padding: 13px 14px;
+        border: 0;
+        background: 0 0;
+        color: #fff;
+        text-align: left;
+        font-weight: 800;
+        font-size: 15px;
+        transition: color 150ms cubic-bezier(.25, .46, .45, .94)
+    }
+
+    .menu-toggle:hover {
+        color: #f4aa00
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .menu.menu--open {
+        display: flex;
+        animation: slideDown .3s cubic-bezier(.25, .46, .45, .94)
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px)
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+
+    .menu-item {
+        justify-content: flex-start;
+        padding: 12px 15px;
+        font-size: 14px;
+        color: #fff;
+        display:none
+    }
+
+    .menu-item:after {
+        display: none
+    }
+
+    .carousel {
+        height: 480px
+    }
+
+    .carousel-caption h1 {
+        font-size: 35px
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+        display: none;
+    }
+
+    .section {
+        padding: 45px 0
+    }
+
+    .scroll-container {
+        height: 280px
+    }
+
+    .news-ticker {
+        height: 330px
+    }
+
+    .sewage-card {
+        margin-top: 20px
+    }
+
+    .logo-card {
+        height: 145px
+    }
+
+    .header-actions .row {
+        display: block;
+        margin: 0
+    }
+
+    .header-actions .header-right {
+        width: 100%;
+        max-width: 100%;
+        min-height: 42px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px;
+        gap: 6px
+    }
+
+    .header-actions .test-searchbox {
+        flex: 1 1 220px;
+        min-width: 190px;
+        max-width: 330px
+    }
+
+    .logo-wrapper {
+        min-height: 108px
+    }
+
+    .logo {
+        width: calc(100% - 110px);
+        max-width: none
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 600px;
+        height: auto
+    }
+
+    .emblem {
+        width: 100px;
+        flex: 0 0 100px
+    }
+
+    .emblem img {
+        width: 92px;
+        height: auto;
+        max-height: 92px
+    }
+
+    .leadership-card {
+        min-height: 250px
+    }
+
+    .news-card {
+        min-height: 480px
+    }
+}
+
+@media (max-width:767px) {
+    .test-searchbox input {
+        width: 100%
+    }
+
+    .logo-section .content-row {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .logo-wrapper {
+        min-height: 88px
+    }
+
+    .logo {
+        width: calc(100% - 76px);
+        max-width: none
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto
+    }
+
+    .emblem {
+        width: 66px;
+        flex: 0 0 66px
+    }
+
+    .emblem img {
+        width: 62px;
+        height: auto;
+        max-height: 62px
+    }
+
+    .carousel {
+        height: 410px
+    }
+
+    .carousel-caption {
+        padding: 20px 35px
+    }
+
+    .carousel-caption h1 {
+        font-size: 29px
+    }
+
+    .carousel-caption p {
+        font-size: 14px
+    }
+
+    .carousel-label {
+        font-size: 9px;
+        display:none
+    }
+
+    .carousel-control {
+        width: 38px;
+        height: 48px;
+        font-size: 32px
+    }
+
+    .carousel-prev {
+        left: 8px
+    }
+
+    .carousel-next {
+        right: 8px
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        display: block
+    }
+
+    .section-heading .outline-button {
+        margin-top: 12px
+    }
+
+    .welcome-msg {
+        margin-bottom: 20px
+    }
+
+    .download-card {
+        min-height: auto;
+        margin-bottom: 18px
+    }
+
+    .news-card {
+        margin-bottom: 20px;
+        min-height: auto
+    }
+
+    .news-ticker {
+        height: 300px
+    }
+
+    .sewage-card {
+        min-height: 390px
+    }
+
+    .water-tank {
+        min-height: 390px
+    }
+
+    .water-banner {
+        min-height: 250px;
+        background-attachment: scroll
+    }
+
+    .water-content h2 {
+        font-size: 30px
+    }
+
+    .activity-card {
+        padding: 32px 24px
+    }
+
+    .activity-card h2 {
+        font-size: 23px
+    }
+
+    .activity-buttons a {
+        width: 100%
+    }
+
+    .logo-card {
+        height: 140px
+    }
+
+    .footer .text-right {
+        text-align: left
+    }
+
+    .footer-bottom {
+        padding: 12px 0
+    }
+
+    .footer-bottom .col-sm-4 {
+        margin-top: 5px
+    }
+
+    .welcome-wide {
+        margin-bottom: 20px
+    }
+
+    .video-card {
+        margin-top: 20px
+    }
+
+    .video-frame {
+        margin: 0 12px
+    }
+
+    .recommendation-badge {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px
+    }
+
+    .header-actions .test-searchbox {
+        order: -1;
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: 34px
+    }
+
+    .leadership-row>[class*=col-] {
+        margin-bottom: 14px
+    }
+
+    .leadership-card {
+        min-height: 240px;
+        padding-top: 16px
+    }
+
+    .leadership-photo {
+        width: 100px;
+        height: 100px
+    }
+}
+
+@media (max-width:480px) {
+    .tool-button {
+        padding: 3px 6px
+    }
+
+    .hindi-link,
+    .login-link {
+        padding: 4px 7px;
+        font-size: 12px
+    }
+
+    .logo-wrapper {
+        min-height: 82px
+    }
+
+    .carousel {
+        height: 340px
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        margin-bottom: 16px;
+        display:none
+    }
+
+    .carousel-control {
+        display: none
+    }
+
+    .section {
+        padding: 38px 0
+    }
+
+    .section-heading h2 {
+        font-size: 27px
+    }
+
+    .water-content h2 {
+        font-size: 27px
+    }
+
+    .activity-card h2 {
+        font-size: 20px
+    }
+
+    .logo-card {
+        height: 130px
+    }
+
+    .logo-card img {
+        height: 62px
+    }
+
+    .carousel-dot {
+        width: 24px;
+        height: 4px
+    }
+
+    .carousel-dot--active {
+        width: 32px
+    }
+
+    .logo {
+        width: calc(100% - 64px);
+        max-width: calc(100% - 62px)
+    }
+
+    .carousel-caption {
+        padding: 18px 24px
+    }
+
+    .card-title {
+        padding: 12px 14px
+    }
+
+    .svg-icon {
+        width: 44px;
+        height: 44px
+    }
+
+    .emblem {
+        width: 56px;
+        flex-basis: 56px
+    }
+
+    .leadership-card {
+        min-height: 230px
+    }
+
+    .leadership-photo {
+        width: 90px;
+        height: 90px
+    }
+
+    .call-to-action {
+        padding: 10px 16px;
+        font-size: 13px
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+    *,
+    ::after,
+    ::before {
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior: auto !important
+    }
+
+    .carousel-slide {
+        transition: none !important
+    }
+
+    .carousel-slide>img {
+        transition: none !important
+    }
+
+    .call-to-action,
+    .carousel-caption,
+    .carousel-caption h1,
+    .carousel-caption p,
+    .carousel-label {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important
+    }
+
+    .menu.menu--open {
+        animation: none !important
+    }
+}
+
+@media (prefers-contrast:high) {
+
+    .call-to-action,
+    .outline-button,
+    .outline-button--white,
+    .small-button {
+        border-width: 3px
+    }
+
+    .carousel-control {
+        border-width: 2px
+    }
+
+    .menu-item:after {
+        height: 4px
+    }
+}
+
+@media print {
+
+    .activity-card,
+    .call-to-action,
+    .carousel,
+    .site-header,
+    .hindi-link,
+    .login-link,
+    .navigation,
+    .notice-box .outline-button,
+    .recommendation-badge,
+    .section-heading .outline-button,
+    .small-button,
+    .tool-button,
+    .video-frame,
+    .test-searchbox {
+        display: none !important
+    }
+
+    .section {
+        padding: 20px 0
+    }
+
+    .footer {
+        background: #000 !important;
+        color: #fff !important
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000 !important
+    }
+
+    .leadership-card,
+    .card--border,
+    .download-card,
+    .logo-card,
+    .news-card,
+    .welcome-msg {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid
+    }
+}
+
